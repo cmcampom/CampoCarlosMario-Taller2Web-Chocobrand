@@ -14,6 +14,8 @@ const app = express();
 app.engine('handlebars',hbs());
 app.set('view engine', 'handlebars');
 
+
+
 app.use(express.static('public'));
 
 client.connect(function(err){

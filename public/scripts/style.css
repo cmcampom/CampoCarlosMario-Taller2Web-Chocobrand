@@ -180,6 +180,7 @@ header .barraMenu .barraMenu_elementos a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-image: url(/public/img/bannerExtrawowMuffins.png);
+  background-color: red;
 }
 
 .contenedorContenido .primeraCategoria .bannerC p {
@@ -228,6 +229,7 @@ header .barraMenu .barraMenu_elementos a {
 }
 
 .contenedorContenido .contenedorElementos .elemento img {
+  background-color: purple;
   width: 35%;
   height: auto;
 }
