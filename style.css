@@ -1,0 +1,581 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header .barraArriba {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 10pt;
+}
+
+header .barraArriba .zonaHoraria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .barraArriba .buscadorDeTiendas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+header .barraMedia {
+  margin-left: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .barraMedia a {
+  text-decoration: none;
+  color: black;
+}
+
+header .barraMedia .iniciarSesion {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .barraMedia .iniciarSesion .imgIniciarSesion {
+  margin-right: 5px;
+}
+
+header .barraMedia .carrito {
+  width: 40%;
+  margin-left: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .barraMedia .carrito .imgCarrito {
+  margin-right: 5px;
+}
+
+header .logoContenedor {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .logoContenedor .logoPrinci {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .logoContenedor .logoPrinci img {
+  width: 50%;
+  height: 50%;
+  background-position: cover;
+  background-size: cover;
+}
+
+header .barraMenu {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 2%;
+}
+
+header .barraMenu .barraMenu_elementos {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+header .barraMenu .barraMenu_elementos a {
+  width: 20%;
+  text-decoration: none;
+  color: #666666;
+}
+
+.contenedorSlider {
+  margin-bottom: 3em;
+}
+
+.contenedorSlider .main_img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.contenedorSlider .w3-display-left {
+  position: relative;
+  top: -274px;
+}
+
+.contenedorSlider .w3-display-right {
+  position: relative;
+  top: -274px;
+  left: 1850px;
+}
+
+.contenedorContenido .textoPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contenedorContenido .textoPrincipal p {
+  color: #50320b;
+}
+
+.contenedorContenido .textoPrincipal .titulo {
+  text-align: center;
+  font-size: 2.5em;
+  letter-spacing: 0.2em;
+}
+
+.contenedorContenido .textoPrincipal .contador {
+  margin-top: -1.5em;
+  text-align: center;
+  font-size: 1em;
+}
+
+.contenedorContenido .primeraCategoria .bannerC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5em;
+  padding-left: 10%;
+  padding-right: 10%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(Data/bannerExtrawowMuffins.png);
+}
+
+.contenedorContenido .primeraCategoria .bannerC p {
+  color: white;
+  letter-spacing: 0.15em;
+  font-size: 1.5em;
+}
+
+.contenedorContenido .primeraCategoria .bannerC button {
+  margin-top: 30px;
+  height: 50%;
+}
+
+.contenedorContenido .contenedorElementos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-top: 2em;
+}
+
+.contenedorContenido .contenedorElementos .elemento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 3em;
+  width: 18%;
+  height: 13em;
+}
+
+.contenedorContenido .contenedorElementos .elemento img {
+  width: 35%;
+  height: auto;
+}
+
+.contenedorContenido .contenedorElementos .elemento .textosElem {
+  text-align: center;
+}
+
+.contenedorContenido .contenedorElementos .elemento .textosElem b {
+  font-size: 1.2em;
+  color: gray;
+}
+
+.contenedorContenido .contenedorElementos .elemento .textosElem p {
+  color: lightgray;
+  letter-spacing: 1pt;
+}
+
+.contenedorContenido .contenedorCategoriaUno {
+  margin-top: 4.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: lightgray;
+}
+
+.contenedorContenido .contenedorCategoriaUno .contenedorTextos {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedorContenido .contenedorCategoriaUno .contenedorTextos .titulo {
+  color: black;
+  font-size: 1.7em;
+  letter-spacing: 0.1em;
+}
+
+.contenedorContenido .contenedorCategoriaUno .contenedorTextos .contenidoTexto {
+  padding-left: 4em;
+  padding-right: 4em;
+  font-size: 1em;
+  color: gray;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contenedorContenido .contenedorCategoriaUno .contenedorImagen {
+  width: 50%;
+}
+
+.contenedorContenido .contenedorCategoriaUno .contenedorImagen .imagen {
+  width: 100%;
+  background-size: cover;
+}
+
+.contenedorContenido .contenedorCategoriaDos {
+  margin-top: 4.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: lightgray;
+}
+
+.contenedorContenido .contenedorCategoriaDos .contenedorImagen {
+  width: 50%;
+}
+
+.contenedorContenido .contenedorCategoriaDos .contenedorImagen .imagen {
+  width: 100%;
+  background-size: cover;
+}
+
+.contenedorContenido .contenedorCategoriaDos .contenedorTextos {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedorContenido .contenedorCategoriaDos .contenedorTextos .titulo {
+  color: black;
+  font-size: 1.7em;
+  letter-spacing: 0.1em;
+}
+
+.contenedorContenido .contenedorCategoriaDos .contenedorTextos .contenidoTexto {
+  padding-left: 4em;
+  padding-right: 4em;
+  font-size: 1em;
+  color: gray;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.lineaFooter {
+  border-color: lightgray;
+  border: 1em solid gray;
+  margin-top: 5em;
+}
+
+footer {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+footer .contenedorCategorias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .contenedorCategorias .unaCategoria {
+  font-size: 0.8em;
+  margin-bottom: 2em;
+  color: #c9c9c9;
+}
+
+footer .contenedorCategorias .unaCategoria b {
+  color: darkgray;
+  font-size: 1.2em;
+}
+
+footer .contenedorCategorias ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer .contenedorNews {
+  background-color: #e6e6e6;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em;
+}
+
+footer .contenedorNews .logo {
+  width: 50%;
+}
+
+footer .contenedorNews .contenedorInputs {
+  width: 50%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contenedorNews .contenedorInputs input {
+  width: 100%;
+  margin-bottom: 2.5em;
+  border-style: none;
+}
+
+footer .contenedorNews .contenedorInputs button {
+  width: 50%;
+}
+
+#menuPopUp {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 20%;
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 40%;
+}
+
+#menuPopUp .contenedorIzquierda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  width: 40%;
+}
+
+#menuPopUp .contenedorIzquierda .fotoMuffin {
+  margin-bottom: 0.4em;
+}
+
+#menuPopUp .contenedorDerecha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1%;
+  padding-left: 10%;
+  padding-right: 4%;
+}
+
+#menuPopUp .contenedorDerecha .textos .tituloP {
+  color: #888888;
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5em;
+}
+
+#menuPopUp .contenedorDerecha .textos .contenidoP {
+  margin-bottom: 2em;
+  color: #b6b6b6;
+  font-size: 1em;
+}
+
+#menuPopUp .contenedorDerecha button {
+  background-color: lightgray;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#contenedorCarrito {
+  position: fixed;
+  width: 60%;
+  height: auto;
+  left: 20%;
+  top: 20%;
+}
+
+#contenedorCarrito p {
+  padding: 2%;
+  padding-left: 5%;
+  margin-bottom: 0;
+  background-image: url(Data/bannerExtrawowMuffins.png);
+  color: white;
+  letter-spacing: 0.15em;
+  font-size: 1.2em;
+}
+
+#contenedorCarrito #menuCarrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: blue;
+}
+
+#contenedorCarrito #menuCarrito .contenedorIzquierda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+
+#contenedorCarrito #menuCarrito .contenedorIzquierda .elementosCar {
+  width: 100%;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contenedorCarrito #menuCarrito .contenedorIzquierda .elementosCar .elementoCar {
+  width: 20%;
+  margin: 5%;
+}
+
+#contenedorCarrito #menuCarrito .contenedorIzquierda .elementosCar .elementoCar img {
+  width: 100%;
+}
+
+#contenedorCarrito #menuCarrito .contenedorIzquierda button {
+  background-color: #8d8c8c;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 60%;
+}
+
+#contenedorCarrito #menuCarrito .contenedorBanner {
+  background-color: yellow;
+  width: 40%;
+}
+/*# sourceMappingURL=style.css.map */
