@@ -206,7 +206,8 @@ header{
         
         justify-content: space-between;
         
-        background-image: url(Data/bannerExtrawowMuffins.png);
+        background-image: url(/public/img/bannerExtrawowMuffins.png);
+       // background-color: red;
         
 
         p{
@@ -231,6 +232,7 @@ header{
         padding-left: 9%;
         padding-right: 9%;
         padding-top: 2em;
+        background-color: blue;
         
       //  background-color: red;
 
@@ -241,6 +243,7 @@ header{
             flex-direction: column;            
             justify-content: center;
             align-items: center;
+            background-color: yellow;
 
           //  background-color: yellow;
 
@@ -608,7 +611,7 @@ footer{
         padding: 2%;
         padding-left: 5%;        
         margin-bottom: 0;        
-        background-image: url(Data/bannerExtrawowMuffins.png);
+        background-image: url(/public/img/bannerExtrawowMuffins.png);
         
         color: white;
         letter-spacing: 0.15em;

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Chocobrand - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"  href="/style.css">
+    <link rel="stylesheet"  href="/scripts/style.css">
     
     <link rel="icon" href="Data/icon.png">
     
@@ -116,7 +116,7 @@
                     <p>
                     <b>{{nombre}}</b>
                     <br>
-                    {{precio}}USD
+                    {{precio}}$ USD
                     </p>
                     </div>
 
@@ -137,25 +137,40 @@
                      </div>
                 
         
-                <div class="contenedorElementos">
-        
-                    <div class="elemento">
-                        <img src="Data/rubySunset.png">
-                        <div class="textosElem">
-                            <p>
-                                <b>Ruby Sunset</b>
-                                <br>
-                                $28 USD
-                            </p>
-                        </div>
-                    </div>
-        
-                    
-                  
-        
-                    
+        <div class="contenedorElementos">
+
+        <!--    <div class="elemento">
+                <img src={{img}}>
+                <div class="textosElem">
+                    <p>
+                        <b>{{nombre}}</b>
+                        <br>
+                        {{precio}} USD
+                    </p>
                 </div>
+            </div>
+        
+                <div class="elemento">
+
+                    {{#each products}}
+                    
+                    <img src ='{{img}}'>
+
+                    <div class="textosElem">
+                    <p>
+                    <b>{{nombre}}</b>
+                    <br>
+                    {{precio}}$ USD
+                    </p>
                     </div>
+
+                    {{/each}}
+
+                </div>         
+     
+        </div>
+                    </div>
+                    -->
 
         </div>
         
