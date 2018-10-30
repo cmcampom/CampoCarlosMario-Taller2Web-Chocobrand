@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Chocobrand - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+    <link rel="stylesheet"  href="/style.css">
     
     <link rel="icon" href="Data/icon.png">
     
@@ -95,7 +95,7 @@
 
         <div class="contenedorElementos">
 
-            <div class="elemento">
+        <!--    <div class="elemento">
                 <img src={{img}}>
                 <div class="textosElem">
                     <p>
@@ -105,11 +105,25 @@
                     </p>
                 </div>
             </div>
+        -->
+                <div class="elemento">
 
-          
+                    {{#each products}}
+                    
+                    <img src ='{{img}}'>
 
+                    <div class="textosElem">
+                    <p>
+                    <b>{{nombre}}</b>
+                    <br>
+                    {{precio}}USD
+                    </p>
+                    </div>
 
-            
+                    {{/each}}
+
+                </div>         
+     
         </div>
             </div>
 

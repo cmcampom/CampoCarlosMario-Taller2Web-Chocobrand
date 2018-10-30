@@ -7,6 +7,7 @@ const url = 'mongodb://localhost:27017';
 const dbName = 'elementos';
 
 const client = new MongoClient(url);
+var db= null;
 
 const app = express();
 
@@ -15,22 +16,45 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static('public'));
 
+client.connect(function(err){
+
+    if(err){
+        console.error(err);
+        response.send(err);
+        return;
+    }
+    db = client.db(dbName);
+});
+
 app.get('/', function(request, response){
 
-    var contexto = {
-        nombre : "NombrePrueba",
-        precio : "100",
-        especial : false,
-        gluten : true,
-        dulce: 60,
-        fav: false,
-        car: false,
-        img: "/public//img//rubySunset.png"
-    };
+    const collection = db.collection('muffins');
 
-    response.render('ultcolec',contexto);
+    collection.find({}).toArray(function(err,docs){
+
+        if(err){
+            console.error(err);
+            response.send(err);
+            return;
+        };
+
+        var contexto = {
+            products: docs,
+            nombre : "NombrePrueba",
+            precio : "100",
+            especial : false,
+            gluten : true,
+            dulce: 60,
+            fav: false,
+            car: false,
+            img: "/public//img//rubySunset.png"
+        };
+    
+        response.render('ultcolec',contexto);
 
 
+
+    })
 });
 
 
