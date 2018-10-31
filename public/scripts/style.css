@@ -49,6 +49,7 @@ header .barraMedia .iniciarSesion {
 
 header .barraMedia .iniciarSesion .imgIniciarSesion {
   margin-right: 5px;
+  background-image: url(/public/img/icon.png);
 }
 
 header .barraMedia .carrito {
